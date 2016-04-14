@@ -1,6 +1,6 @@
 <h1>StackOverflow Question-based User Clustering</h1>
 
-Program that clusters SO users on the basis of the questions asked by each by each individual. The clustering used is K-means clustering available in the Scikit-learn library.
+Using the Python driver for the Stackexchange API, questions are fetched for each user and stored in the database. On the basis of these questions, users are clustered into multiple groups using K-Means clustering available in the Scikit-learn Python library. The top keywords are displayed for each cluster. Each cluster thus defines a particular software domain wherein all users are active, and thus significant information about each user can be mined.
 
 The workflow is as follows:
 - Extract user ids from Stack Overflow urls.
